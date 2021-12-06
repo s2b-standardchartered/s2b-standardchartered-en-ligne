@@ -9,9 +9,9 @@ swal({
 
 const alert1=()=>{
 swal({
-  title: "erreur",
-  text: "virement refuser",
-  icon: "error",
+  title: "succès",
+  text: "virement effectuer",
+  icon: "success",
   dangerMode: true,
 })}
 
