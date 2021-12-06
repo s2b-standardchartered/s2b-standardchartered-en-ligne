@@ -136,27 +136,24 @@ function closeNav() {
 <br>
 <center><button id="button" class="ok" onclick="
   let timerInterval
-  Swal.fire({
-	title: 'virement en cours',
-	html: 'chargement ',
-	timer: 10000,
-	onOpen: () => {
-	  Swal.showLoading()
-	  timerInterval = setInterval(() => {
-		
-	  }, 100)
-	},
-	onClose: () => {
-	  clearInterval(timerInterval)
-	}
-  }).then((result) => {
-	if (
-	  // Read more about handling dismissals
-	  result.dismiss === Swal.DismissReason.timer
-	) {
-	  alert1();
-	}
-  })
+Swal.fire({
+  title: 'virement en cours',
+  html: 'chargement',
+  timer: 2000,
+  timerProgressBar: false,
+  didOpen: () => {
+    Swal.showLoading()
+   
+  },
+  willClose: () => {
+    clearInterval(timerInterval)
+  }
+}).then((result) => {
+  /* Read more about handling dismissals below */
+  if (result.dismiss === Swal.DismissReason.timer) {
+    alert1();
+  }
+})
 ">VALIDER</button></center>
 </form>
 </div>
