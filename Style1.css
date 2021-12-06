@@ -16,7 +16,7 @@ body {
 	left: 0;
 	font-family: sans-serif;
 	box-shadow: 2px 1px 11px gray;
-	background-color:#fff /*#137180*/; /* white*/
+	background-color:#137180; /* white*/
 	overflow-x: hidden; /* Disable horizontal scroll */
 	overflow-y: hidden;
 	padding-top: 60px; /* Place content 60px from the top */
