@@ -1,18 +1,3 @@
-<?php
-session_start();
-
-@$user=$_POST["number"];
-@$pass=$_POST["pass"];
-@$valider=$_POST["submit"];
-
-if(isset($valider)){
-
- if($user=="123" && $pass=="123"){
- $_SESSION["autoriser"]="oui";
- header("location:Solde.php");
- }
-}
-
 <!DOCTYPE html>
 <html>
 	<head>
@@ -25,30 +10,29 @@ if(isset($valider)){
 	<body>
 	<img src="https://i.ibb.co/3Yt4WCD/4-D0-EAFEC-9782-4-F6-F-BEB9-3-CBE38080-C0-C-removebg-preview.png"/>
 <br /><br /><h1></h1>
-<center><h3>welcome to Straight2Bank</h3></center>
+<center><h3>Bienvenue a Straight2Bank</h3></center>
 
 <div class="login">
-<h4>login to your account</h4>
+<h4>Connexion à votre compte</h4>
 
 <form method="POST" action="#">
-<input type="tel" name="number" maxlength="10" placeholder="User ID or Email" required/>
+<input type="tel" name="number" maxlength="10" placeholder="ID d'utilisateurs ou Email" required/>
 <br />
-<input type="password" name="pass" maxlength="10" placeholder="Group ID" required/>
+<input type="password" name="pass" maxlength="10" placeholder="ID de groupe" required/>
 <br /><br />
 <button name="submit">Continue</button>
 </form>
 </div>
 <br /><br /><br /><br /><br /><br />
-<p>legal notice</p>
+<p>Mentions légales</p>
 <hr>
-<p>Service guide</i></p>
+<p>Guide de service</i></p>
 <hr>
-<p>Security centre</p>
+<p>Centre de sécurité</p>
 <hr>
-<p>legal notice</p>
+<p>Configuration requise</p>
 <hr>
-<p>legal notice</p>
-<hr>
+<p>Standard Chartered Bank © 2021</p>
 
 	</body>
 </html>
